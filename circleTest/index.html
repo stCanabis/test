@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circular Progress test</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<script src="script.js"></script>
+<script>
+
+    (function () {
+        var n, id, progress;
+        progress = new CircularProgress({
+            radius: 13,
+            lineWidth: 4,
+            strokeStyle: '#C23633',
+            initial: {
+                lineWidth: 4,
+                strokeStyle: '#F4F7F9'
+            }
+        });
+        progress.options.text = {
+            'font' : '0'
+        }
+
+        document.body.appendChild(progress.el);
+        n = 0;
+        id = setInterval(function () {
+            if (n == 100) clearInterval(id);
+            progress.update(n++);
+        }, 50);
+
+    })();
+
+
+
+
+</script>
+</body>
+</html>
