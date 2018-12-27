@@ -1,0 +1,124 @@
+
+#test{
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png');
+}
+
+.bg-Scene_1_00064_min {
+
+
+    background-position: -10px -10px !important;
+}
+
+
+.bg-Scene_1_00065_min {
+    background-position: -1950px -10px !important;
+}
+
+
+.bg-Scene_1_00066_min {
+
+    background-position: -10px -1110px !important;
+}
+
+
+.bg-Scene_1_00067_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -1950px -1110px;
+}
+
+
+.bg-Scene_1_00068_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -10px -2210px;
+}
+
+
+.bg-Scene_1_00069_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -1950px -2210px;
+}
+
+
+.bg-Scene_1_00070_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -3890px -10px;
+}
+
+
+.bg-Scene_1_00071_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -3890px -1110px;
+}
+
+
+.bg-Scene_1_00072_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -3890px -2210px;
+}
+
+
+.bg-Scene_1_00073_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -10px -3310px;
+}
+
+
+.bg-Scene_1_00074_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -1950px -3310px;
+}
+
+
+.bg-Scene_1_00075_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -3890px -3310px;
+}
+
+
+.bg-Scene_1_00076_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -10px -4410px;
+}
+
+
+.bg-Scene_1_00077_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -1950px -4410px;
+}
+
+
+.bg-Scene_1_00078_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -3890px -4410px;
+}
+
+
+.bg-Scene_1_00079_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -5830px -10px;
+}
+
+
+.bg-Scene_1_00080_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -5830px -1110px;
+}
+
+
+.bg-Scene_1_00081_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -5830px -2210px;
+}
+
+
+.bg-Scene_1_00082_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -5830px -3310px;
+}
+
+
+.bg-Scene_1_00083_min {
+    width: 1920px; height: 1080px;
+    background: url('css_sprites.png') -5830px -4410px;
+}
