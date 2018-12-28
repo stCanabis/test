@@ -1,46 +1,30 @@
 
 
 $( function() {
+    // минимальный номер рисунка
     var imgNumber = 10;
+    // максимальный номер рисунка
     var lastImgNumber = 79;
+    // элемент canvas
     var canvas = document.getElementById('test');
-
+    //
     var ctx = canvas.getContext('2d');
+    // объект в канвасе
     var img = new Image;
+    // массив с путями к файлам
     var imgArr = [];
+    // массив с предзагруженными объектами
     var testArr = [];
 
-
-
-
-    //
-    // jQuery.preloadImages = function()
-    // {
-    //     for(var i = 0; i < arguments.length; i++)
-    //     {
-    //         jQuery("<img>").attr("src", arguments[ i ]);
-    //     }
-    // };
-    //
-    //
-    // $.preloadImages('img/Scene_1_00010-min.png', 'img/Scene_1_00011-min.png',
-    //     'img/Scene_1_00012-min.png', 'img/Scene_1_00013-min.png', 'img/Scene_1_00014-min.png',
-    //     'img/Scene_1_00015-min.png', 'img/Scene_1_00016-min.png', 'img/Scene_1_00017-min.png',
-    //     'img/Scene_1_00018-min.png', 'img/Scene_1_00019-min.png', 'img/Scene_1_00020-min.png',
-    //     'img/Scene_1_00021-min.png', 'img/Scene_1_00022-min.png', 'img/Scene_1_00023-min.png',
-    //     'img/Scene_1_00024-min.png', 'img/Scene_1_00025-min.png', 'img/Scene_1_00026-min.png',
-    //     'img/Scene_1_00027-min.png', 'img/Scene_1_00028-min.png', 'img/Scene_1_00029-min.png');
-
-
-
-
+    /**
+     * предзагрузка изображений
+     */
     $.preloadImages = function () {
         if (typeof arguments[arguments.length - 1] == 'function') {
             var callback = arguments[arguments.length - 1];
         } else {
             var callback = false;
         }
-
         if (typeof arguments[0] == 'object') {
             var images = arguments[0];
             var n = images.length;
@@ -51,11 +35,11 @@ $( function() {
         var not_loaded = n;
         for (var i = 0; i < n; i++) {
 
+            /**
+             * после загрузки каждого изображения пушим в массив
+             */
             jQuery(new Image()).attr('src', images[i]).load(function() {
-                console.log('this - ' + this.src);
                 testArr.push(this);
-
-
                 if (--not_loaded < 1 && typeof callback == 'function') {
                     callback();
                 }
@@ -63,10 +47,14 @@ $( function() {
         }
     };
 
+    // создаем массив с путями к файлам
     for (i=imgNumber; i<lastImgNumber; i++){
         imgArr.push('img/Scene_1_000' + i + '-min.png')
     }
 
+    /**
+     * вызываем функцию предзагрузки, после загрузки сортируем массмв
+     */
     $.preloadImages(imgArr, function () {
         console.log('!!! all img load!!!');
 
@@ -81,22 +69,20 @@ $( function() {
         });
 
 
-
+        /**
+         * рисуем на канвасе
+         * @param imgNumber
+         */
         function test(imgNumber) {
-
-
-            // console.log(testArr[imgNumber]);
-            console.log($(window).height());
 
             img = testArr[imgNumber];
             ctx.canvas.width = $(window).width();
             ctx.canvas.height = $(window).width()/16*9;
-            // ctx.canvas.height = $(window).height;
             ctx.clearRect( 0, 0, ctx.canvas.width, ctx.canvas.height );
             ctx.drawImage( img, 0, 0, ctx.canvas.width, ctx.canvas.height );
         }
 
-
+        // инициализация ползунка jqueryUI
         var handle = $( "#custom-handle" );
         $( "#slider" ).slider({
             create: function() {
@@ -104,6 +90,7 @@ $( function() {
             },
             slide: function( event, ui ) {
                 handle.text( ui.value );
+                // по сдвигу вызываем рисование
                 test(ui.value);
             }
         });

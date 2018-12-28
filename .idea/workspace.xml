@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bf2a047-e72c-4ee4-977a-7f69944f3ff5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sequence2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sequence2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sequence2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/sequence2/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sequence2/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/sequence2/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +26,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sequence2/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="92" column="54" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
+                <state relative-caret-position="838">
+                  <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -184,12 +181,12 @@
       <workItem from="1545672244965" duration="338000" />
       <workItem from="1545821465106" duration="1953000" />
       <workItem from="1545889018738" duration="13647000" />
-      <workItem from="1545970181587" duration="13333000" />
+      <workItem from="1545970181587" duration="13986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31887000" />
+    <option name="totallyTimeSpent" value="32540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -314,8 +311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sequence2/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="92" column="54" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
+        <state relative-caret-position="838">
+          <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
         </state>
       </provider>
     </entry>
