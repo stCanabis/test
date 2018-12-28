@@ -83,10 +83,15 @@ $( function() {
 
 
         function test(imgNumber) {
-            console.log(testArr[imgNumber]);
+
+
+            // console.log(testArr[imgNumber]);
+            console.log($(window).height());
+
             img = testArr[imgNumber];
-            ctx.canvas.width = 1600;
-            ctx.canvas.height = 900;
+            ctx.canvas.width = $(window).width();
+            ctx.canvas.height = $(window).width()/16*9;
+            // ctx.canvas.height = $(window).height;
             ctx.clearRect( 0, 0, ctx.canvas.width, ctx.canvas.height );
             ctx.drawImage( img, 0, 0, ctx.canvas.width, ctx.canvas.height );
         }

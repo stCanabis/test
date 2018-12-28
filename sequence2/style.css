@@ -1,5 +1,12 @@
+.wrapper{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 80vw;
+}
 
 #custom-handle {
+    position: absolute;
     width: 3em;
     height: 1.6em;
     top: 50%;
