@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <!---->
+    <!---->
+    <!---->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/detect.min.js" type="text/javascript"></script>
+    <!---->
+    <!---->
+    <!---->
+
+
+
+    <title>Document</title>
+</head>
+<body>
+
+<!---->
+<!---->
+<!---->
+<script>
+    var user = detect.parse(navigator.userAgent);
+    var deviceType = user.device.type;
+    if (deviceType == "Desktop"){
+        document.write('<div class="fullscreen-bg">');
+        document.write('<video loop muted autoplay class="fullscreen-bg-video" id="backvideo">');
+        document.write('<source src="vid/video.mp4" type="video/mp4">');
+        document.write('<source src="vid/video.webm" type="video/webm">');
+        document.write('</video>');
+        document.write('</div>');
+    }else{
+        document.write('<div class="fullscreen-bg">');
+        document.write('<img class="fullscreen-bg-video" src="img/poster.png">');
+        document.write('</div>');
+    }
+</script>
+<section>
+
+    <div class="container">
+
+        <div class="row">
+            <script>
+                var user = detect.parse(navigator.userAgent);
+                var deviceType = user.device.type;
+                if (deviceType == "Desktop"){
+                    document.write('<div class="col-xs-12 col-lg-3 col-lg-push-10">');
+                    document.write('<div class="iconsa"><a href="https://vk.com/vmeccte"><svg class="svgfulvk" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="svgvk" d="M22.541 1.46484C22.459 1.875 22.1309 2.57227 21.5566 3.51562C21.1465 4.21289 20.6543 4.99219 20.0801 5.89453C19.5879 6.63281 19.3008 7.00195 19.3008 7.00195C19.1367 7.24805 19.0547 7.45312 19.0547 7.57617C19.0547 7.74023 19.1367 7.9043 19.3008 8.06836L19.6699 8.47852C21.6387 10.5293 22.7461 11.9238 22.9922 12.6621C23.0742 12.9902 23.0332 13.2773 22.8691 13.4414C22.7051 13.6055 22.5 13.6875 22.1719 13.6875H19.752C19.4238 13.6875 19.1777 13.6055 18.9316 13.4004C18.7676 13.3184 18.4395 13.0312 18.0293 12.5391C17.6191 12.0469 17.25 11.6367 16.9219 11.3086C15.8145 10.2832 14.9941 9.75 14.502 9.75C14.2559 9.75 14.0918 9.79102 14.0098 9.87305C13.9277 9.95508 13.8867 10.1602 13.8867 10.4062C13.8457 10.6113 13.8457 11.0215 13.8457 11.6777V12.7441C13.8457 13.0723 13.7637 13.3184 13.5996 13.4414C13.3535 13.6055 12.8613 13.6875 12.123 13.6875C10.8105 13.6875 9.53906 13.3184 8.22656 12.5391C6.91406 11.8008 5.76562 10.6934 4.78125 9.25781C3.83789 8.02734 3.05859 6.75586 2.44336 5.44336C1.95117 4.45898 1.54102 3.55664 1.25391 2.69531C1.04883 2.03906 0.966797 1.54688 0.966797 1.25977C0.966797 0.808594 1.21289 0.5625 1.78711 0.5625H4.20703C4.49414 0.5625 4.69922 0.644531 4.86328 0.767578C5.02734 0.931641 5.15039 1.17773 5.27344 1.50586C5.64258 2.61328 6.09375 3.67969 6.66797 4.70508C7.16016 5.68945 7.65234 6.46875 8.14453 7.04297C8.63672 7.6582 9.00586 7.94531 9.29297 7.94531C9.45703 7.94531 9.53906 7.9043 9.62109 7.78125C9.70312 7.6582 9.74414 7.41211 9.74414 7.04297V3.47461C9.70312 3.06445 9.62109 2.6543 9.45703 2.32617C9.375 2.16211 9.21094 1.95703 9.04688 1.71094C8.8418 1.46484 8.75977 1.30078 8.75977 1.13672C8.75977 0.972656 8.80078 0.849609 8.92383 0.726562C9.04688 0.644531 9.21094 0.5625 9.375 0.5625H13.1895C13.4355 0.5625 13.5996 0.644531 13.6816 0.767578C13.7637 0.931641 13.8457 1.13672 13.8457 1.46484V6.22266C13.8457 6.46875 13.8867 6.67383 13.9688 6.75586C14.0508 6.87891 14.1328 6.91992 14.2559 6.91992C14.3789 6.91992 14.543 6.87891 14.707 6.79688C14.8711 6.71484 15.0762 6.50977 15.3633 6.18164C15.8555 5.60742 16.3887 4.91016 16.9219 4.04883C17.25 3.47461 17.6191 2.81836 17.9473 2.08008L18.3574 1.25977C18.5215 0.808594 18.8906 0.5625 19.3828 0.5625H21.8027C22.459 0.5625 22.7051 0.890625 22.541 1.46484Z" fill="#2C2628"/></svg></a></div>');
+                    document.write('<div class="iconsa"><a href="https://www.instagram.com/maccoffeeru/"><svg xmlns="http://www.w3.org/2000/svg" class="svgfulinst" viewBox="0 0 30 30" width="30px" height="30px"><path class="svg" d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z" fill="#422A23"/></svg></a></div>');
+                    document.write('<div class="iconsa"><a href="https://www.facebook.com/MacCoffeeGlobal/"><svg class="svgful" width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="svg" d="M3.24414 21.625H7.09961V12.2324H10.0938L10.5859 8.5H7.09961V5.91602C7.09961 5.3418 7.18164 4.89062 7.42773 4.60352C7.67383 4.27539 8.20703 4.11133 8.94531 4.11133H10.9141V0.789062C10.1758 0.707031 9.19141 0.625 8.04297 0.625C6.56641 0.625 5.41797 1.07617 4.55664 1.9375C3.6543 2.79883 3.24414 3.98828 3.24414 5.54688V8.5H0.0859375V12.2324H3.24414V21.625Z" fill="#422A23"/></svg></a></div>');
+                    document.write('</div>');
+                }
+            </script>
+
+            <!--                    <div class="col-lg-3 hidden-xs"></div>-->
+            <div class="col-xs-12 col-lg-6">
+                <a href="index.htm"><img class="logo" src="img/logo.png" alt="MacCoffee"></a>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="logosecond" src="img/cappucino.svg" alt="MacCoffee">
+            </div>
+        </div>
+    </div>
+    <script>
+        var user = detect.parse(navigator.userAgent);
+        var deviceType = user.device.type;
+        if (deviceType == "Desktop"){
+            document.write('<div class="container-fluid" id="footer">');
+            document.write('<div class="row">');
+            document.write('<div class="col-sm-1 controllers">');
+            document.write('<img class="controls" id="mute" src="img/mute.svg" onClick="imgsrc1(); mutevid();">');
+            document.write('</div>');
+            document.write('</div>');
+            document.write('</div>');
+        }
+    </script>
+
+
+
+
+</section>
+
+
+<!---->
+<!---->
+<!---->
+
+
+<section class="seq">
+    <div class="container">
+        <div class="row">
+            <div class="wrapper">
+                <div id="slider">
+                    <div id="custom-handle" class="ui-slider-handle"></div>
+                </div>
+            </div>
+        </div>
+            <canvas class="" id="test">asdasdsd</canvas>
+
+    </div>
+</section>
+
+
+
+
+
+
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="jquery-ui.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<!---->
+<!---->
+<!---->
+<script src="js/script.js"></script>
+<script src="js/video.js"></script>
+<!---->
+<!---->
+<!---->
+<script src="script.js"></script>
+</body>
+
+</html>

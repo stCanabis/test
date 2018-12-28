@@ -1,8 +1,9 @@
 .wrapper{
-    position: absolute;
-    left: 50px;
-    top: 50px;
-    width: 80vw;
+    /*position: absolute;*/
+    /*left: 50px;*/
+    /*top: 50px;*/
+    width: 60vw;
+    margin: 0 auto;
 }
 
 #custom-handle {

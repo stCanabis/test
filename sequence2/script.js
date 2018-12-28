@@ -85,6 +85,7 @@ $( function() {
         // инициализация ползунка jqueryUI
         var handle = $( "#custom-handle" );
         $( "#slider" ).slider({
+            max:testArr.length - 1,
             create: function() {
                 handle.text( $( this ).slider( "value" ) );
             },

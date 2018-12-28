@@ -1,0 +1,183 @@
+        body{
+        
+/*
+        height:100%;
+        width:100%;
+        margin:0;
+        display:table;
+*/
+        }  
+        div {
+        font-size:42px;
+        text-align:center;
+/*        vertical-align:middle;        */
+        font-family:verdana;
+        color:white;
+/*        display:table-cell;*/
+        }
+        
+        .logo{
+            height: 12vh;
+            width: auto;
+            padding-bottom: 20px;
+}
+        .logosecond{
+            height: 12vh;
+            width: auto;
+            
+}
+
+
+        .social{
+            height: 35px;
+            width: auto;
+            display: inline;
+            padding-bottom: 13px;          
+}
+        .socialvk{
+            height: 25px;
+            width: auto;
+            padding-bottom: 10px;
+}
+        .controls{
+            height: 30px;
+            width: auto;
+/*            display: inline;*/
+/*            padding-right: 20px;*/
+            transition: all 0.2s;
+}
+
+.controls:hover{
+     height: 34px;
+            width: auto;
+    transition: all 0.2s;
+}
+
+        #footer{
+            bottom:40px;
+            position: absolute;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+.fullscreen-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+
+.controllers{
+left:30px;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+     .fullscreen-bg-video { height: 100%;  }
+ }
+ @media (max-aspect-ratio: 16/9) {
+     .fullscreen-bg-video { width: 100%;  }
+ }
+ @supports (object-fit: cover) {
+     .fullscreen-bg-video {
+         top: 0; left: 0;
+         width: 100%; height: 100%;
+         object-fit: cover;
+     }
+ }
+
+.iconsa{
+    display: inline-block;
+/*    cursor: pointer;*/
+    color: white;
+    width: 50px;
+    height: 50px;
+/*    border: 3px solid rgba(255, 255, 255, 0.2);*/
+    border-radius: 50%;
+/*    line-height: 50px;*/
+    text-align: center;
+    margin-right: 20px;
+    background-color:white;
+/*    font-size: 32px;*/
+    vertical-align:middle;
+    
+    margin-top: 20px;
+    transition: all 0.2s;
+    
+}
+
+.iconsa:hover{
+/*
+    width:55px;
+    height:55px;
+*/
+    transition: all 0.2s;
+    vertical-align:middle;
+box-shadow: 0 0 0px 3px rgba(255, 255, 255, 1);    
+}
+
+.iconsa:last-child{
+    margin-right: 0;
+}
+
+
+.iconsa:hover .svg{
+    fill: #FF4242;
+    transition: all 0.2s;
+    
+}       
+
+.iconsa:hover .svgful{
+ 
+    transition: all 0.2s;
+}
+
+.svgful{
+    
+transition: all 0.2s;
+    height: 30px;
+    padding-bottom: 10px;
+}
+
+.svgfulinst{
+    
+transition: all 0.2s;
+    height: 32px;
+    padding-bottom: 9px;
+}
+
+
+.svgfulvk{
+     height: 25px;
+     padding-bottom: 13px;
+    transition: all 0.2s;
+}
+
+.iconsa:hover .svgfulvk{
+    
+    transition: all 0.2s;
+}
+
+.iconsa:hover .svgvk{
+    fill: #FF4242;
+    transition: all 0.2s;
+    
+}       
+
+.svg{
+    transition: all 0.2s;
+    
+}
+
+.svgvk{
+    transition: all 0.2s;
+}

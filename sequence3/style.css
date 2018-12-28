@@ -1,0 +1,21 @@
+.wrapper{
+    /*position: absolute;*/
+    /*left: 50px;*/
+    /*top: 50px;*/
+    width: 60vw;
+    margin: 0 auto;
+}
+
+#custom-handle {
+    position: absolute;
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+.seq{
+
+}
