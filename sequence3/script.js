@@ -2,9 +2,9 @@
 
 $( function() {
     // минимальный номер рисунка
-    var imgNumber = 10;
+    var imgNumber = 120983;
     // максимальный номер рисунка
-    var lastImgNumber = 79;
+    var lastImgNumber = 121012;
     // элемент canvas
     var canvas = document.getElementById('test');
     //
@@ -49,7 +49,7 @@ $( function() {
 
     // создаем массив с путями к файлам
     for (i=imgNumber; i<lastImgNumber; i++){
-        imgArr.push('img/Scene_1_000' + i + '-min.png')
+        imgArr.push('img/tinified/Clip4_with_Alpha_' + i + '.png')
     }
 
     /**
