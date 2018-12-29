@@ -2,9 +2,9 @@
 
 $( function() {
     // минимальный номер рисунка
-    var imgNumber = 120983;
+    var imgNumber = 100;
     // максимальный номер рисунка
-    var lastImgNumber = 121012;
+    var lastImgNumber = 129;
     // элемент canvas
     var canvas = document.getElementById('test');
     //
@@ -49,7 +49,8 @@ $( function() {
 
     // создаем массив с путями к файлам
     for (i=imgNumber; i<lastImgNumber; i++){
-        imgArr.push('img/tinified/Clip4_with_Alpha_' + i + '.png')
+        // imgArr.push('img/tinified/Clip4_with_Alpha_' + i + '.png')
+        imgArr.push('img/1366/Clip4_with_Alpha_' + i + '.png')
     }
 
     /**
@@ -68,6 +69,14 @@ $( function() {
             return 0;
         });
 
+        for (j=0;j<3;j++){
+            for (i=0; i<lastImgNumber - imgNumber; i++){
+                testArr.push(testArr[i]);
+            }
+        }
+
+        console.log(testArr);
+
 
         /**
          * рисуем на канвасе
@@ -76,10 +85,22 @@ $( function() {
         function test(imgNumber) {
 
             img = testArr[imgNumber];
-            ctx.canvas.width = $(window).width();
-            ctx.canvas.height = $(window).width()/16*9;
+            // ctx.canvas.width = $(window).width()-50;
+            // ctx.canvas.height = ($(window).width()-50)/16*9;
+            ctx.canvas.width = ($(window).height()-100)/9*16;
+            ctx.canvas.height = $(window).height()-100;
             ctx.clearRect( 0, 0, ctx.canvas.width, ctx.canvas.height );
             ctx.drawImage( img, 0, 0, ctx.canvas.width, ctx.canvas.height );
+
+            $('canvas#test').css('position','absolute').css('left',-(ctx.canvas.width - $(window).width())/2 );
+            // if ($(window).width() < ctx.canvas.width ) {
+            //     $('canvas#test').css('position','absolute').css('left',-(ctx.canvas.width - $(window).width())/2 );
+            // } else if ($(window).width() > ctx.canvas.width ) {
+            //     $('canvas#test').css('position','absolute').css('left',-(ctx.canvas.width - $(window).width())/2 );
+            // }
+
+
+
         }
 
         // инициализация ползунка jqueryUI

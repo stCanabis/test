@@ -1,7 +1,7 @@
-.wrapper{
-    /*position: absolute;*/
-    /*left: 50px;*/
-    /*top: 50px;*/
+.seq .wrapper{
+    position: absolute;
+    left: 50px;
+    top: 90vh;
     width: 60vw;
     margin: 0 auto;
 }
@@ -17,5 +17,8 @@
 }
 
 .seq{
+    top: 0;
     position: absolute;
+    width: 100vw;
+    height: 100vh;
 }
