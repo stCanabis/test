@@ -13,7 +13,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sequence3/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state relative-caret-position="1700">
               <caret line="100" column="19" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="19" />
             </state>
           </provider>
@@ -22,7 +22,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sequence3/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
+            <state relative-caret-position="838">
               <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
             </state>
           </provider>
@@ -96,6 +96,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,12 +113,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ditorino" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -163,17 +163,17 @@
       <workItem from="1545889018738" duration="13647000" />
       <workItem from="1545970181587" duration="17019000" />
       <workItem from="1546054706341" duration="8793000" />
+      <workItem from="1547005553770" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44366000" />
+    <option name="totallyTimeSpent" value="44423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.119936034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12100213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -331,7 +331,7 @@
     <entry file="file://$PROJECT_DIR$/sequence3/detorino/index.htm" />
     <entry file="file://$PROJECT_DIR$/sequence3/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="1700">
           <caret line="100" column="19" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="19" />
         </state>
       </provider>
@@ -345,7 +345,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sequence3/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
+        <state relative-caret-position="838">
           <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
         </state>
       </provider>
