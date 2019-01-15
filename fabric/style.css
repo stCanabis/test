@@ -1,20 +1,22 @@
 #sheet-container {
-    width: 400px;
-    height: 400px;
-    border: 1px solid black;
+    position: absolute;
+    top: calc(57.2vh - 150px);
+    left: calc(48.9vw - 150px);
+    width: 300px;
+    height: 300px;
+    /*border: 1px solid black;*/
     border-radius: 50%;
     overflow: hidden;
 }
 
-#sheet-container {
-    width: 400px;
-    height: 400px;
-    border: 1px solid black;
-    border-radius: 50%;
-}
+
 
 
 body{
-   background-image: url("img/poster.png");
+    background-image: url("img/cup.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain    ;
+    height: 100vh;
 }
 
